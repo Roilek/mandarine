@@ -1,0 +1,540 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mandarine &amp; Co · Agence événementielle à Sion, Valais</title>
+<meta name="description" content="Mandarine & Co, agence événementielle basée à Sion : événements d'entreprise, séminaires, conférences, manifestations grand public, stands et événements privés en Valais et en Suisse romande. Selfie Box et location de mobilier.">
+<link rel="icon" href="img/favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600;700&family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,700&display=swap" rel="stylesheet">
+<style>
+:root{--or:#ec7a1c;--or-f:#c95f0b;--or-c:#f6a623;--nuit:#17132a;--nuit-2:#231d3d;--encre:#211d2c;--doux:#615b6d;--creme:#fff6ec;--blanc:#fff;--gris:#f4f2f6;--r:16px;--ombre:0 12px 34px rgba(23,19,42,.10)}
+*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:100px}
+body{margin:0;font-family:"DM Sans",system-ui,sans-serif;color:var(--encre);background:var(--blanc);line-height:1.65;font-size:17px;-webkit-font-smoothing:antialiased}
+img{max-width:100%;height:auto;display:block}a{color:inherit}
+.wrap{max-width:1200px;margin:0 auto;padding:0 20px}
+h1,h2,h3,.titre{font-family:Jost,"Futura",sans-serif;font-weight:600;line-height:1.08;margin:0;letter-spacing:-.01em}
+h2{font-size:clamp(2.1rem,4.6vw,3.3rem)}
+h3{font-size:1.35rem}
+.sur{display:inline-flex;align-items:center;gap:10px;font-family:Jost;font-weight:600;font-size:.85rem;letter-spacing:.18em;text-transform:uppercase;color:var(--or);margin-bottom:14px}
+.sur:before{content:"";width:28px;height:2px;background:linear-gradient(90deg,var(--or-c),var(--or))}
+.lead{font-size:1.12rem;color:var(--doux);max-width:680px;margin:16px 0 0}
+section{padding:100px 0}
+.surligne{background:linear-gradient(90deg,var(--or),var(--or-c));color:#fff;padding:0 .18em;-webkit-box-decoration-break:clone;box-decoration-break:clone}
+.btn{display:inline-flex;align-items:center;gap:10px;font-family:Jost;font-weight:600;font-size:1.02rem;text-decoration:none;border-radius:999px;padding:14px 28px;border:2px solid transparent;cursor:pointer;transition:transform .15s,background .15s,box-shadow .15s}
+.btn:hover{transform:translateY(-2px)}
+.btn-or{background:linear-gradient(90deg,var(--or),#f08d22);color:#fff;box-shadow:0 8px 22px rgba(236,122,28,.35)}
+.btn-or:hover{box-shadow:0 12px 28px rgba(236,122,28,.45)}
+.btn-ligne{border-color:currentColor;background:transparent}
+.btn-blanc{background:#fff;color:var(--nuit)}
+/* en-tête */
+header{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.95);backdrop-filter:blur(10px);border-bottom:1px solid #eee9f1}
+.nav{display:flex;align-items:center;gap:26px;height:78px}
+.nav .logo img{height:56px;width:auto}
+.nav nav{display:flex;gap:22px;margin-left:auto}
+.nav nav a{text-decoration:none;font-family:Jost;font-weight:500;font-size:1.02rem;color:var(--encre)}
+.nav nav a:hover{color:var(--or)}
+.nav .btn{padding:11px 20px;font-size:.95rem}
+.burger{display:none;margin-left:auto;background:none;border:0;padding:8px;cursor:pointer;color:var(--encre)}
+@media(max-width:1020px){.nav nav{display:none;position:absolute;top:100%;left:0;right:0;flex-direction:column;gap:0;background:#fff;border-bottom:1px solid #eee;padding:8px 20px 18px}
+.nav nav.ouvert{display:flex}.nav nav a{padding:11px 0;font-size:1.2rem;border-bottom:1px solid #f1edf4}.burger{display:block}.nav>.btn{display:none}}
+/* hero */
+.hero{position:relative;min-height:min(90vh,840px);display:flex;align-items:center;color:#fff;background:var(--nuit) url(img/hero.webp) center/cover;overflow:hidden}
+.hero:before{content:"";position:absolute;inset:0;background:linear-gradient(100deg,rgba(23,19,42,.88) 15%,rgba(23,19,42,.35) 70%,rgba(23,19,42,.15))}
+.hero .wrap{position:relative;width:100%;padding-top:60px;padding-bottom:60px}
+.hero h1{font-size:clamp(2.7rem,7vw,5.4rem);max-width:880px;font-weight:600}
+.hero h1 .surligne{display:inline-block;margin-top:.18em}
+.hero p{font-size:clamp(1.05rem,2vw,1.25rem);max-width:640px;margin:26px 0 34px;color:#e9e4f3}
+.hero .cta{display:flex;gap:14px;flex-wrap:wrap}
+.atouts{position:relative;background:var(--nuit-2);color:#fff}
+.atouts .wrap{display:grid;grid-template-columns:repeat(4,1fr);gap:0}
+.atout{padding:26px 22px;border-left:1px solid rgba(255,255,255,.1)}
+.atout:first-child{border-left:0}
+.atout b{display:block;font-family:Jost;font-size:1.5rem;font-weight:600;color:var(--or-c)}
+.atout span{font-size:.95rem;color:#cfc8de}
+/* intro */
+.intro-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:70px;align-items:center}
+.intro-grid p{margin:16px 0 0;color:var(--doux)}
+.intro-grid strong{color:var(--encre)}
+.intro-img{position:relative}
+.intro-img img{border-radius:var(--r);box-shadow:var(--ombre)}
+.intro-img:after{content:"";position:absolute;inset:auto -18px -18px auto;width:55%;height:55%;border-radius:var(--r);background:linear-gradient(135deg,var(--or-c),var(--or));z-index:-1}
+.puces{display:flex;flex-wrap:wrap;gap:8px;margin-top:22px}
+.puces span{background:var(--creme);color:var(--or-f);font-weight:700;font-size:.9rem;padding:7px 14px;border-radius:999px}
+/* catégories */
+.evts{background:var(--gris)}
+.cartes{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:46px}
+.carte{background:#fff;border-radius:var(--r);overflow:hidden;box-shadow:var(--ombre);display:flex;flex-direction:column;text-decoration:none;transition:transform .2s}
+.carte:hover{transform:translateY(-4px)}
+.carte .ph{aspect-ratio:4/3;overflow:hidden}
+.carte .ph img{width:100%;height:100%;object-fit:cover;transition:transform .5s}
+.carte:hover .ph img{transform:scale(1.05)}
+.carte .tx{padding:22px 24px 26px;flex:1;display:flex;flex-direction:column}
+.carte p{color:var(--doux);margin:10px 0 0;font-size:.98rem;flex:1}
+.carte .lien{margin-top:16px;font-family:Jost;font-weight:600;color:var(--or)}
+/* formats entreprise */
+.onglets{display:flex;gap:10px;flex-wrap:wrap;margin:38px 0 28px}
+.onglet{font-family:Jost;font-weight:600;font-size:1rem;padding:11px 22px;border-radius:999px;border:2px solid #e3dde9;background:#fff;color:var(--encre);cursor:pointer}
+.onglet[aria-selected=true]{background:var(--nuit);border-color:var(--nuit);color:#fff}
+.panneau{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center}
+.panneau[hidden]{display:none}
+.panneau img{border-radius:var(--r);box-shadow:var(--ombre);aspect-ratio:3/2;object-fit:cover;width:100%}
+.panneau h3{font-size:1.9rem}
+.panneau p{color:var(--doux);margin:14px 0 0}
+.panneau ul{margin:16px 0 0;padding:0;list-style:none;display:grid;gap:10px}
+.panneau li{padding-left:30px;position:relative;color:var(--doux)}
+.panneau li:before{content:"";position:absolute;left:0;top:.55em;width:16px;height:8px;border-radius:8px;background:linear-gradient(90deg,var(--or-c),var(--or))}
+.panneau li b{color:var(--encre)}
+.autres{margin-top:34px;color:var(--doux)}
+.autres b{color:var(--encre)}
+/* prestations */
+.presta{background:var(--creme)}
+.icones{display:grid;grid-template-columns:repeat(5,1fr);gap:16px;margin-top:44px}
+.ic{background:#fff;border-radius:14px;padding:18px 10px 16px;text-align:center;font-family:Jost;font-weight:600;box-shadow:0 4px 14px rgba(236,122,28,.08)}
+.ic img{width:84px;height:84px;margin:0 auto 6px;mix-blend-mode:multiply;filter:saturate(1.4) contrast(1.25)}
+/* méthode */
+.methode{background:var(--nuit);color:#fff}
+.methode h2{color:#fff}.methode .lead{color:#cfc8de}
+.etapes{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:46px;counter-reset:e}
+.etape{background:var(--nuit-2);border:1px solid rgba(255,255,255,.08);border-radius:var(--r);padding:30px 28px;position:relative}
+.etape:before{counter-increment:e;content:"0" counter(e);font-family:Jost;font-weight:700;font-size:3.2rem;line-height:1;background:linear-gradient(135deg,var(--or-c),var(--or));-webkit-background-clip:text;background-clip:text;color:transparent;display:block;margin-bottom:12px}
+.etape p{color:#cfc8de;margin:10px 0 0}
+/* communication */
+.com-grid{display:grid;grid-template-columns:.95fr 1.05fr;gap:64px;align-items:center}
+.com-grid img{border-radius:var(--r);box-shadow:var(--ombre)}
+.temps{display:grid;gap:14px;margin-top:26px}
+.temps div{border-left:3px solid var(--or);padding:4px 0 4px 18px}
+.temps b{font-family:Jost;font-size:1.15rem}
+.temps p{margin:4px 0 0;color:var(--doux);font-size:.98rem}
+/* selfie box */
+.selfie{background:linear-gradient(135deg,#fff3e6,#ffe1c4)}
+.selfie-grid{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center}
+.selfie-photos{position:relative;padding-bottom:60px}
+.selfie-photos img:first-child{border-radius:var(--r);box-shadow:var(--ombre)}
+.selfie-photos img:last-child{position:absolute;right:-10px;bottom:0;width:46%;border-radius:var(--r);border:6px solid #fff;box-shadow:var(--ombre);transform:rotate(3deg)}
+.feats{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin:26px 0 30px}
+.feat{background:#fff;border-radius:14px;padding:16px 18px}
+.feat b{display:block;font-family:Jost;font-size:1.08rem}
+.feat span{font-size:.93rem;color:var(--doux)}
+/* mobilier */
+.mob-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(170px,1fr));gap:16px;margin-top:30px}
+.mob{background:#fff;border:1px solid #ece7f0;border-radius:14px;padding:12px 12px 14px;display:flex;flex-direction:column}
+.mob img{aspect-ratio:1;object-fit:contain;width:100%;border-radius:10px}
+.mob b{font-family:Jost;font-weight:600;font-size:1.02rem;line-height:1.25;margin-top:8px}
+.mob small{color:var(--doux);font-size:.82rem;line-height:1.35;margin-top:3px;flex:1}
+.mob .bas{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;margin-top:10px;gap:6px}.mob .qte{margin-left:auto}
+.mob .px{font-weight:700;color:var(--or-f);font-size:.92rem;white-space:nowrap}
+.qte{display:flex;align-items:center;border:1.5px solid #e3dde9;border-radius:999px}
+.qte button{width:28px;height:28px;border:0;background:none;font-size:1.15rem;cursor:pointer;color:var(--encre);border-radius:50%}
+.qte button:hover{background:var(--creme)}
+.qte output{min-width:24px;text-align:center;font-weight:700;font-size:.92rem}
+.mob.choisi{border-color:var(--or);box-shadow:0 0 0 1px var(--or)}
+.filtres{display:flex;flex-wrap:wrap;gap:8px;margin-top:30px}
+.filtre{font:inherit;font-size:.92rem;font-weight:700;padding:8px 16px;border-radius:999px;border:1.5px solid #e3dde9;background:#fff;cursor:pointer}
+.filtre[aria-pressed=true]{background:var(--or);border-color:var(--or);color:#fff}
+.panier{position:sticky;bottom:16px;z-index:20;margin-top:26px;background:var(--nuit);color:#fff;border-radius:999px;padding:12px 14px 12px 26px;display:flex;align-items:center;gap:16px;justify-content:space-between;box-shadow:0 14px 34px rgba(23,19,42,.3)}
+.panier[hidden]{display:none}.panier span{font-size:.98rem}.panier b{color:var(--or-c)}
+.panier .btn{padding:11px 22px}
+.cat-note{margin-top:22px;color:var(--doux);font-size:.95rem}
+/* réalisations */
+.real{background:var(--gris)}
+.reals{display:grid;grid-template-columns:repeat(4,1fr);gap:20px;margin-top:44px}
+.reals figure{margin:0;background:#fff;border-radius:var(--r);overflow:hidden;box-shadow:var(--ombre)}
+.reals img{aspect-ratio:4/3;object-fit:cover;width:100%}
+.reals figcaption{padding:16px 18px 20px}
+.reals figcaption b{font-family:Jost;font-size:1.12rem;display:block;line-height:1.25}
+.reals figcaption span{font-size:.92rem;color:var(--doux)}
+.galerie{columns:4 220px;column-gap:14px;margin-top:40px}
+.galerie button{display:block;width:100%;margin:0 0 14px;padding:0;border:0;border-radius:12px;overflow:hidden;cursor:zoom-in;background:none;break-inside:avoid}
+.galerie img{width:100%;transition:transform .4s}
+.galerie button:hover img{transform:scale(1.04)}
+.galerie.replie button:nth-child(n+9){display:none}
+dialog{border:0;padding:0;background:transparent;max-width:92vw;max-height:90vh}
+dialog::backdrop{background:rgba(10,8,20,.88)}
+dialog img{max-width:92vw;max-height:86vh;border-radius:10px}
+dialog button{position:fixed;top:16px;right:20px;background:#fff;border:0;border-radius:50%;width:44px;height:44px;font-size:1.5rem;cursor:pointer}
+/* à propos */
+.apropos-grid{display:grid;grid-template-columns:.8fr 1.2fr;gap:64px;align-items:center}
+.portrait{position:relative;max-width:440px}
+.portrait img{border-radius:var(--r);box-shadow:var(--ombre)}
+.portrait .badge{position:absolute;left:-14px;bottom:28px;background:linear-gradient(90deg,var(--or),var(--or-c));color:#fff;font-family:Jost;font-weight:600;padding:12px 20px;border-radius:12px;box-shadow:var(--ombre);line-height:1.2}
+.portrait .badge small{display:block;font-weight:400;font-size:.85rem;opacity:.9}
+.apropos-grid p{color:var(--doux);margin:14px 0 0}
+.citation{margin:26px 0 0;padding:20px 24px;border-radius:var(--r);background:var(--creme);font-family:Jost;font-size:1.3rem;font-weight:500;color:var(--encre)}
+.valeurs{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:24px}
+.valeurs div{border-top:3px solid var(--or);padding-top:10px}
+.valeurs b{font-family:Jost}
+.valeurs span{display:block;font-size:.92rem;color:var(--doux)}
+/* faq */
+.faq{background:var(--gris)}
+.faq-grid{display:grid;grid-template-columns:.8fr 1.2fr;gap:60px;align-items:start}
+details{background:#fff;border-radius:14px;margin-bottom:12px;box-shadow:0 3px 12px rgba(23,19,42,.05)}
+summary{list-style:none;cursor:pointer;padding:18px 54px 18px 22px;font-family:Jost;font-weight:600;font-size:1.08rem;position:relative}
+summary::-webkit-details-marker{display:none}
+summary:after{content:"+";position:absolute;right:20px;top:50%;transform:translateY(-50%);width:28px;height:28px;border-radius:50%;background:var(--creme);color:var(--or);display:flex;align-items:center;justify-content:center;font-size:1.3rem;transition:transform .2s}
+details[open] summary:after{transform:translateY(-50%) rotate(45deg)}
+details p{margin:0;padding:0 22px 20px;color:var(--doux)}
+/* contact */
+.contact{background:var(--nuit);color:#fff}
+.contact h2{color:#fff}.contact .lead{color:#cfc8de}
+.contact-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:56px;align-items:start}
+.infos{display:grid;gap:12px;margin-top:28px}
+.info{display:flex;gap:14px;align-items:center;text-decoration:none;background:var(--nuit-2);border:1px solid rgba(255,255,255,.08);border-radius:14px;padding:14px 18px}
+.info .pi{flex:none;width:42px;height:42px;border-radius:50%;background:linear-gradient(135deg,var(--or-c),var(--or));display:flex;align-items:center;justify-content:center}
+.info small{display:block;font-size:.78rem;letter-spacing:.08em;text-transform:uppercase;color:#a99fbe}
+.reseaux{display:flex;gap:10px;margin-top:20px}
+.reseaux a{width:44px;height:44px;border-radius:50%;border:1.5px solid rgba(255,255,255,.25);display:flex;align-items:center;justify-content:center}
+.reseaux a:hover{background:var(--or);border-color:var(--or)}
+.plan{width:100%;height:220px;border:0;border-radius:14px;margin-top:20px;filter:grayscale(.3)}
+form{background:#fff;color:var(--encre);border-radius:var(--r);padding:32px}
+form h3{font-size:1.8rem}
+.champs{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:20px}
+.plein{grid-column:1/-1}
+label{display:flex;flex-direction:column;gap:6px;font-size:.86rem;font-weight:700;color:var(--doux)}
+input,select,textarea{font:inherit;font-size:1rem;padding:12px 14px;border-radius:12px;border:1.5px solid #e3dde9;background:#faf8fc;color:var(--encre)}
+input:focus,select:focus,textarea:focus{outline:2px solid var(--or);border-color:var(--or)}
+fieldset{border:0;padding:0;margin:0}
+legend{font-size:.86rem;font-weight:700;color:var(--doux);margin-bottom:8px}
+.choix{display:flex;flex-wrap:wrap;gap:8px}
+.choix label{flex-direction:row;font-weight:500}
+.choix input{position:absolute;opacity:0;pointer-events:none}
+.choix span{padding:8px 14px;border-radius:999px;border:1.5px solid #e3dde9;color:var(--encre);cursor:pointer;font-size:.93rem}
+.choix input:checked+span{background:var(--or);border-color:var(--or);color:#fff}
+.choix input:focus-visible+span{outline:2px solid var(--nuit)}
+form .btn{width:100%;justify-content:center;margin-top:22px}
+.ok{display:none;margin:14px 0 0;font-weight:700;color:#2f7d32}
+footer{background:#0f0c1d;color:#a99fbe;padding:34px 0;font-size:.92rem}
+footer .wrap{display:flex;justify-content:space-between;align-items:center;gap:20px;flex-wrap:wrap}
+footer img{height:64px;width:auto}
+footer nav{display:flex;gap:18px;flex-wrap:wrap}footer nav a{text-decoration:none}footer nav a:hover{color:#fff}
+/* responsive */
+@media(max-width:1000px){.icones{grid-template-columns:repeat(3,1fr)}.reals{grid-template-columns:repeat(2,1fr)}.cartes{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:900px){section{padding:72px 0}.intro-grid,.panneau,.com-grid,.selfie-grid,.apropos-grid,.faq-grid,.contact-grid{grid-template-columns:1fr;gap:40px}
+.etapes{grid-template-columns:1fr}.atouts .wrap{grid-template-columns:1fr 1fr}.atout:nth-child(3){border-left:0}.atout{border-top:1px solid rgba(255,255,255,.1)}
+.intro-img{max-width:none}.intro-img img{aspect-ratio:4/3;object-fit:cover;width:100%}.intro-img:after{display:none}.portrait{max-width:420px}}
+@media(max-width:640px){body{font-size:16px}.cartes{grid-template-columns:1fr}.champs,.feats{grid-template-columns:1fr}form{padding:22px}
+.icones{grid-template-columns:repeat(3,1fr);gap:10px}.ic{font-size:.85rem;padding:12px 4px}.ic img{width:58px;height:58px}.mob-grid{grid-template-columns:repeat(2,1fr);gap:10px}
+.reals{grid-template-columns:1fr}.galerie{columns:2;column-gap:10px}.galerie button{margin-bottom:10px}.valeurs{grid-template-columns:1fr}.atout{padding:18px 14px}.atout b{font-size:1.2rem}
+.panier{border-radius:18px;flex-direction:column;align-items:stretch;padding:14px;text-align:center}.panier .btn{justify-content:center}.hero{min-height:620px}.portrait .badge{left:10px}}
+</style>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"LocalBusiness","name":"Mandarine & Co","description":"Agence événementielle en Valais : événements d'entreprise, institutionnels et privés","address":{"@type":"PostalAddress","streetAddress":"Rue Ambuel 7","postalCode":"1950","addressLocality":"Sion","addressCountry":"CH"},"telephone":"+41796685625","email":"info@mandarineandco.ch","url":"https://www.mandarineandco.ch/","founder":"Florence Moix","foundingDate":"2018","areaServed":["Valais","Suisse romande"],"sameAs":["https://www.instagram.com/mandarineandco.ch/","https://www.facebook.com/mandarineandco.ch/"]}</script>
+</head>
+<body>
+<header>
+  <div class="wrap nav">
+    <a class="logo" href="#top" aria-label="Mandarine & Co, accueil"><img src="img/logo.webp" alt="Mandarine & Co" width="80" height="56"></a>
+    <nav id="menu" aria-label="Menu principal">
+      <a href="#evenements">Événements</a><a href="#prestations">Prestations</a><a href="#selfie-box">Selfie Box</a><a href="#mobilier">Mobilier</a><a href="#realisations">Réalisations</a><a href="#a-propos">À propos</a><a href="#faq">FAQ</a>
+    </nav>
+    <a class="btn btn-or" href="#contact">Parlons de votre événement</a>
+    <button class="burger" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="menu"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
+  </div>
+</header>
+
+<main id="top">
+<section class="hero">
+  <div class="wrap">
+    <span class="sur" style="color:var(--or-c)">Créateur d'événements · Sion, Valais</span>
+    <h1>Chaque événement raconte une histoire.<br><span class="surligne">Écrivons la vôtre.</span></h1>
+    <p>Conception, production et coordination d'événements d'entreprise, institutionnels et privés en Valais et dans toute la Suisse romande. Un seul interlocuteur, du premier brief à la dernière lumière éteinte.</p>
+    <div class="cta"><a class="btn btn-or" href="#contact">Nous contacter</a><a class="btn btn-ligne" href="#realisations" style="color:#fff">Voir nos réalisations</a></div>
+  </div>
+</section>
+<div class="atouts"><div class="wrap">
+  <div class="atout"><b>Depuis 2018</b><span>Fondée par Florence Moix</span></div>
+  <div class="atout"><b>Basée à Sion</b><span>Valais et Suisse romande</span></div>
+  <div class="atout"><b>1 interlocuteur</b><span>Du brief au jour J</span></div>
+  <div class="atout"><b>15 prestations</b><span>Lieu, traiteur, lumières, animation…</span></div>
+</div></div>
+
+<section id="agence">
+  <div class="wrap intro-grid">
+    <div>
+      <span class="sur">L'agence événementielle en Valais</span>
+      <h2>Des moments uniques, au service de votre communication</h2>
+      <p><strong>Mandarine &amp; Co</strong> est une agence événementielle basée à <strong>Sion</strong>, spécialisée dans les événements d'entreprise, grand public et privés. Nous concevons et créons des moments uniques et inoubliables, au service de votre stratégie de communication.</p>
+      <p>Pour que votre événement soit exclusif, nous sommes toujours à l'affût des dernières innovations en matière d'<strong>audiovisuel</strong>, de <strong>divertissement</strong> et de <strong>décoration</strong>. Une fois le projet posé, vous n'avez plus qu'à vous consacrer à vos invités : notre équipe prend en charge toute la logistique.</p>
+      <div class="puces"><span>Soirée de gala</span><span>Inauguration</span><span>Événement client</span><span>Lancement de produit</span><span>Soirée de fin d'année</span><span>Séminaire</span><span>Anniversaire</span></div>
+    </div>
+    <div class="intro-img"><img src="img/intro.webp" alt="Espace lounge décoré par Mandarine & Co" loading="lazy" width="880" height="1100"></div>
+  </div>
+</section>
+
+<section class="evts" id="evenements">
+  <div class="wrap">
+    <span class="sur">Ce que nous organisons</span>
+    <h2>Un événement pour chaque occasion</h2>
+    <p class="lead">Parfois les idées viennent par bribes, de manière désordonnée. Nous avons tellement l'habitude d'organiser des événements que nous referons le puzzle avec vous, en ajoutant les pièces manquantes.</p>
+    <div class="cartes"><a class="carte" href="#entreprise"><div class="ph"><img src="img/cat-entreprise.webp" alt="" loading="lazy" width="900" height="675"></div><div class="tx"><h3>Événements d&#x27;entreprise</h3><p>Inauguration, anniversaire d&#x27;entreprise, lancement de produit, soirée de gala, portes ouvertes, teambuilding.</p><span class="lien">En savoir plus →</span></div></a><a class="carte" href="#contact"><div class="ph"><img src="img/cat-seminaire.webp" alt="" loading="lazy" width="900" height="675"></div><div class="tx"><h3>Séminaires</h3><p>Rassembler, annoncer, intégrer : des lieux inédits et des activités adaptées, grâce à notre connaissance du terrain valaisan.</p><span class="lien">En savoir plus →</span></div></a><a class="carte" href="#contact"><div class="ph"><img src="img/cat-conference.webp" alt="" loading="lazy" width="900" height="675"></div><div class="tx"><h3>Conférences</h3><p>Le lieu adapté à votre audience, la communication, la décoration et les jeux de lumière pour porter votre message.</p><span class="lien">En savoir plus →</span></div></a><a class="carte" href="#communication"><div class="ph"><img src="img/cat-grand-public.webp" alt="" loading="lazy" width="900" height="675"></div><div class="tx"><h3>Manifestations grand public</h3><p>Un seul contact pour coordonner les prestataires, une stratégie de communication et des animations qui créent l&#x27;émotion.</p><span class="lien">En savoir plus →</span></div></a><a class="carte" href="#contact"><div class="ph"><img src="img/cat-stand.webp" alt="" loading="lazy" width="900" height="675"></div><div class="tx"><h3>Stands &amp; expositions</h3><p>Réalisation de votre stand, aménagement de l&#x27;espace et concept d&#x27;animation pour attirer un maximum de visiteurs.</p><span class="lien">En savoir plus →</span></div></a><a class="carte" href="#contact"><div class="ph"><img src="img/cat-prive.webp" alt="" loading="lazy" width="900" height="675"></div><div class="tx"><h3>Événements privés</h3><p>Mariage, anniversaire, fête : du lieu parfait aux invitations et au choix des prestataires.</p><span class="lien">En savoir plus →</span></div></a></div>
+  </div>
+</section>
+
+<section id="entreprise">
+  <div class="wrap">
+    <span class="sur">Événements d'entreprise</span>
+    <h2>Présenter, fédérer, célébrer</h2>
+    <p class="lead">Présenter un nouveau produit, accroître votre visibilité, fédérer vos collaborateurs ou fêter l'anniversaire de votre entreprise : nous sélectionnons des lieux qui captivent vos convives et des animations en cohésion avec votre identité.</p>
+    <div class="onglets" role="tablist" aria-label="Formats d'événements d'entreprise">
+      <button class="onglet" role="tab" id="t-inau" aria-controls="p-inau" aria-selected="true">Inauguration</button>
+      <button class="onglet" role="tab" id="t-anni" aria-controls="p-anni" aria-selected="false" tabindex="-1">Anniversaire d'entreprise</button>
+      <button class="onglet" role="tab" id="t-lanc" aria-controls="p-lanc" aria-selected="false" tabindex="-1">Lancement de produit</button>
+    </div>
+    <div class="panneau" role="tabpanel" id="p-inau" aria-labelledby="t-inau">
+      <img src="img/f-inauguration.webp" alt="Salle dressée pour une soirée" loading="lazy">
+      <div><h3>Pourquoi organiser une inauguration ?</h3>
+        <p>Nouveaux locaux, début d'une nouvelle activité, création d'un nouveau département… Le défi : faire vivre à vos convives un moment dont ils se souviendront, en cohésion avec vos valeurs.</p>
+        <ul><li><b>Un concept fort</b>, décliné en décoration, traiteur, lieu…</li><li><b>Une animation</b> (réalité augmentée, dégustation…) qui crée de la valeur ajoutée</li><li><b>Un souvenir</b> qui marque les esprits de vos invités</li></ul></div>
+    </div>
+    <div class="panneau" role="tabpanel" id="p-anni" aria-labelledby="t-anni" hidden>
+      <img src="img/f-anniversaire.webp" alt="Table de fête avec décoration pop-corn" loading="lazy">
+      <div><h3>Remercier, raconter, se projeter</h3>
+        <p>L'anniversaire de votre entreprise est l'occasion de remercier collaborateurs, clients et partenaires, de revenir sur votre histoire et de partager les étapes à venir.</p>
+        <ul><li><b>La soirée à thème</b> : originale et décalée, au plus près de votre identité</li><li><b>La soirée de gala</b> : plus formelle, le format le plus répandu</li><li><b>La journée teambuilding</b> : défis et jeux collaboratifs, dans les lieux atypiques du Valais</li></ul></div>
+    </div>
+    <div class="panneau" role="tabpanel" id="p-lanc" aria-labelledby="t-lanc" hidden>
+      <img src="img/f-lancement.webp" alt="Soirée de lancement de la Porsche Taycan" loading="lazy">
+      <div><h3>Réussir son lancement de produit</h3>
+        <p>Célébrer l'arrivée sur le marché d'un nouveau produit ou service, c'est la dernière étape avant sa commercialisation. L'enjeu est de taille.</p>
+        <ul><li><b>Une stratégie en amont</b> : teasing, save the date, réseaux sociaux, invitations</li><li><b>Les bons invités</b> : journalistes, influenceurs, clients, prospects</li><li><b>Un lieu atypique</b> et une scénographie travaillée</li><li><b>Un accueil soigné</b>, adapté à l'heure et à vos convives</li></ul></div>
+    </div>
+    <p class="autres">Et aussi : <b>soirées de gala</b>, <b>journées portes ouvertes</b>, <b>teambuilding</b>. <a href="#contact" style="color:var(--or);font-weight:700">Parlez-nous de votre projet →</a></p>
+  </div>
+</section>
+
+<section class="presta" id="prestations">
+  <div class="wrap">
+    <span class="sur">Nos prestations</span>
+    <h2>Tout votre événement, entre de bonnes mains</h2>
+    <p class="lead">Nous vous accompagnons sur une, plusieurs ou toutes les étapes. Nous confier votre événement, c'est bénéficier de :</p>
+    <div class="icones"><div class="ic"><img src="img/ic-budget.webp" alt="" loading="lazy" width="64" height="64">Budget</div><div class="ic"><img src="img/ic-lieu.webp" alt="" loading="lazy" width="64" height="64">Lieu</div><div class="ic"><img src="img/ic-communication.webp" alt="" loading="lazy" width="64" height="64">Communication</div><div class="ic"><img src="img/ic-mobilier.webp" alt="" loading="lazy" width="64" height="64">Mobilier</div><div class="ic"><img src="img/ic-lumieres.webp" alt="" loading="lazy" width="64" height="64">Lumières</div><div class="ic"><img src="img/ic-decoration.webp" alt="" loading="lazy" width="64" height="64">Décoration</div><div class="ic"><img src="img/ic-musique.webp" alt="" loading="lazy" width="64" height="64">Musique</div><div class="ic"><img src="img/ic-traiteur.webp" alt="" loading="lazy" width="64" height="64">Traiteur</div><div class="ic"><img src="img/ic-animation.webp" alt="" loading="lazy" width="64" height="64">Animation</div><div class="ic"><img src="img/ic-photos.webp" alt="" loading="lazy" width="64" height="64">Photos</div><div class="ic"><img src="img/ic-transport.webp" alt="" loading="lazy" width="64" height="64">Transport</div><div class="ic"><img src="img/ic-personnel.webp" alt="" loading="lazy" width="64" height="64">Personnel</div><div class="ic"><img src="img/ic-accueil.webp" alt="" loading="lazy" width="64" height="64">Accueil</div><div class="ic"><img src="img/ic-fleuriste.webp" alt="" loading="lazy" width="64" height="64">Fleuriste</div><div class="ic"><img src="img/ic-logistique.webp" alt="" loading="lazy" width="64" height="64">Logistique</div></div>
+  </div>
+</section>
+
+<section class="methode">
+  <div class="wrap">
+    <span class="sur" style="color:var(--or-c)">Notre façon de travailler</span>
+    <h2>Par où commencer ? Venez nous parler.</h2>
+    <p class="lead">Des plannings et des offres claires : si vous nous confiez votre événement, vous savez où vous allez.</p>
+    <div class="etapes">
+      <div class="etape"><h3>Poser le concept</h3><p>Vous nous racontez votre idée, même en vrac. Ensemble, nous posons le concept de votre événement d'entreprise ou privé.</p></div>
+      <div class="etape"><h3>L'adapter à votre réalité</h3><p>Nous l'ajustons à votre budget, à votre stratégie de communication et à votre calendrier, avec des partenaires de la région.</p></div>
+      <div class="etape"><h3>Le faire vivre</h3><p>Nous coordonnons prestataires et logistique. Le jour J, vous profitez de vos invités, nous nous occupons du reste.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="communication">
+  <div class="wrap com-grid">
+    <img src="img/communication.webp" alt="Équipe autour d'une table de travail" loading="lazy">
+    <div>
+      <span class="sur">Communication événementielle</span>
+      <h2>Votre événement vit avant, pendant et après</h2>
+      <p class="lead">L'événement est l'aboutissement de votre stratégie de communication. Nous vous accompagnons sur une ou plusieurs étapes, selon votre budget et vos objectifs.</p>
+      <div class="temps">
+        <div><b>Avant</b><p>Teasing, save the date, invitations, mailing, flyers, plan média, conférence de presse, système d'inscription.</p></div>
+        <div><b>Pendant</b><p>Prises de parole, photographes et vidéastes, communication digitale dédiée à l'événement.</p></div>
+        <div><b>Après</b><p>Galerie photos, vidéo, communiqué de presse : de quoi faire durer l'événement et annoncer la prochaine édition.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="selfie" id="selfie-box">
+  <div class="wrap selfie-grid">
+    <div>
+      <span class="sur">Location</span>
+      <h2>La Selfie Box : souriez, clac, c'est imprimé !</h2>
+      <p class="lead">Le photomaton digital et personnalisable, l'animation photo indispensable de votre fête, mariage, événement d'entreprise ou stand. Vos invités repartent avec un souvenir imprimé de votre événement.</p>
+      <div class="feats">
+        <div class="feat"><b>Livraison sur site</b><span>Nous livrons, configurons et venons la récupérer après l'événement.</span></div>
+        <div class="feat"><b>Impression en 8 secondes</b><span>Format 10 × 15 cm, imprimé sur-le-champ.</span></div>
+        <div class="feat"><b>Personnalisable</b><span>Votre logo, le fond, le texte et le design de la box.</span></div>
+        <div class="feat"><b>Écran tactile</b><span>Une interface simple, accessible à tous vos invités.</span></div>
+      </div>
+      <a class="btn btn-or" href="mailto:info@mandarineandco.ch?subject=Devis%20Selfie%20Box">Demander un devis Selfie Box</a>
+    </div>
+    <div class="selfie-photos"><img src="img/selfie-1.webp" alt="Invités posant devant la Selfie Box" loading="lazy"><img src="img/selfie-2.webp" alt="Photo de groupe déguisé" loading="lazy"></div>
+  </div>
+</section>
+
+<section id="mobilier">
+  <div class="wrap">
+    <span class="sur">Location de mobilier</span>
+    <h2>Composez votre demande de devis</h2>
+    <p class="lead">Tables hautes, fauteuils, tapis rouge, éclairage, décoration… Ajoutez les articles et les quantités, nous vous envoyons une offre.</p>
+    <div class="filtres" role="group" aria-label="Filtrer le mobilier"><button class="filtre" type="button" aria-pressed="true" data-cat="tout">Tout</button><button class="filtre" type="button" aria-pressed="false" data-cat="tables">Tables</button><button class="filtre" type="button" aria-pressed="false" data-cat="assises">Assises</button><button class="filtre" type="button" aria-pressed="false" data-cat="guidage">Guidage &amp; sécurité</button><button class="filtre" type="button" aria-pressed="false" data-cat="textiles">Housses &amp; textiles</button><button class="filtre" type="button" aria-pressed="false" data-cat="luminaires">Luminaires</button><button class="filtre" type="button" aria-pressed="false" data-cat="deco">Décoration</button><button class="filtre" type="button" aria-pressed="false" data-cat="accessoires">Accessoires</button></div>
+    <div class="mob-grid" id="mobGrid"><div class="mob" data-id="table-haute" data-cat="tables"><img src="img/m-table-haute.webp" alt="" loading="lazy" width="400" height="400"><b>Table haute</b><small>Acier alu &amp; inox, plateau Ø 60 cm, hauteur 113 cm</small>
+<div class="bas"><span class="px">CHF 20.–</span><div class="qte"><button type="button" data-d="-1" aria-label="Retirer : Table haute">−</button><output aria-live="polite">0</output><button type="button" data-d="1" aria-label="Ajouter : Table haute">+</button></div></div></div><div class="mob" data-id="housse" data-cat="textiles"><img src="img/m-housse.webp" alt="" loading="lazy" width="400" height="400"><b>Housse de table haute</b><small>Noire ou blanche, pour plateau Ø 60 cm, nettoyage inclus</small>
+<div class="bas"><span class="px">CHF 10.–</span><div class="qte"><button type="button" data-d="-1" aria-label="Retirer : Housse de table haute">−</button><output aria-live="polite">0</output><button type="button" data-d="1" aria-label="Ajouter : Housse de table haute">+</button></div></div></div><div class="mob" data-id="table-basse" data-cat="tables"><img src="img/m-table-basse.webp" alt="" loading="lazy" width="400" height="400"><b>Table basse</b><small>Blanche, plateau démontable</small>
+<div class="bas"><span class="px">CHF 15.–</span><div class="qte"><button type="button" data-d="-1" aria-label="Retirer : Table basse">−</button><output aria-live="polite">0</output><button type="button" data-d="1" aria-label="Ajouter : Table basse">+</button></div></div></div><div class="mob" data-id="fauteuil-blanc" data-cat="assises"><img src="img/m-fauteuil-blanc.webp" alt="" loading="lazy" width="400" height="400"><b>Fauteuil blanc</b><small>Blanc brillant, empilable, 74 × 92 × 71 cm</small>
+<div class="bas"><span class="px">CHF 25.–</span><div class="qte"><button type="button" data-d="-1" aria-label="Retirer : Fauteuil blanc">−</button><output aria-live="polite">0</output><button type="button" data-d="1" aria-label="Ajouter : Fauteuil blanc">+</button></div></div></div><div class="mob" data-id="chaise-longue" data-cat="assises"><img src="img/m-chaise-longue.webp" alt="" loading="lazy" width="400" height="400"><b>Chaise longue</b><small>Tissu 100 % polyester, pliable</small>
+<div class="bas"><span class="px">CHF 10.–</span><div class="qte"><button type="button" data-d="-1" aria-label="Retirer : Chaise longue">−</button><output aria-live="polite">0</output><button type="button" data-d="1" aria-label="Ajouter : Chaise longue">+</button></div></div></div><div class="mob" data-id="tapis-rouge" data-cat="guidage"><img src="img/m-tapis-rouge.webp" alt="" loading="lazy" width="400" height="400"><b>Tapis rouge</b><small>Largeur 2 m, épaisseur 2 cm, autres coloris sur demande</small>
+<div class="bas"><span class="px">CHF 20.– / m</span><div class="qte"><button type="button" data-d="-1" aria-label="Retirer : Tapis rouge">−</button><output aria-live="polite">0</output><button type="button" data-d="1" aria-label="Ajouter : Tapis rouge">+</button></div></div></div><div class="mob" data-id="potelet" data-cat="guidage"><img src="img/m-potelet.webp" alt="" loading="lazy" width="400" height="400"><b>Potelet</b><small>Acier inox, pour cordon d’env. 150 cm</small>
+<div class="bas"><span class="px">CHF 20.–</span><div class="qte"><button type="button" data-d="-1" aria-label="Retirer : Potelet">−</button><output aria-live="polite">0</output><button type="button" data-d="1" aria-label="Ajouter : Potelet">+</button></div></div></div><div class="mob" data-id="cordons" data-cat="guidage"><img src="img/m-cordons.webp" alt="" loading="lazy" width="400" height="400"><b>Cordon</b><small>Velours rouge ou noir, mousqueton inox, 150 cm</small>
+<div class="bas"><span class="px">CHF 10.–</span><div class="qte"><button type="button" data-d="-1" aria-label="Retirer : Cordon">−</button><output aria-live="polite">0</output><button type="button" data-d="1" aria-label="Ajouter : Cordon">+</button></div></div></div><div class="mob" data-id="porte-cintres" data-cat="accessoires"><img src="img/m-porte-cintres.webp" alt="" loading="lazy" width="400" height="400"><b>Porte-cintres</b><small>Penderie pour vestiaire</small>
+<div class="bas"><span class="px">CHF 25.–</span><div class="qte"><button type="button" data-d="-1" aria-label="Retirer : Porte-cintres">−</button><output aria-live="polite">0</output><button type="button" data-d="1" aria-label="Ajouter : Porte-cintres">+</button></div></div></div><div class="mob" data-id="cintre" data-cat="accessoires"><img src="img/m-cintre.webp" alt="" loading="lazy" width="400" height="400"><b>Cintre en bois</b><small></small>
+<div class="bas"><span class="px">CHF 0.40</span><div class="qte"><button type="button" data-d="-1" aria-label="Retirer : Cintre en bois">−</button><output aria-live="polite">0</output><button type="button" data-d="1" aria-label="Ajouter : Cintre en bois">+</button></div></div></div><div class="mob" data-id="coussin" data-cat="accessoires"><img src="img/m-coussin.webp" alt="" loading="lazy" width="400" height="400"><b>Coussin et ciseau d&#x27;inauguration</b><small></small>
+<div class="bas"><span class="px">CHF 25.–</span><div class="qte"><button type="button" data-d="-1" aria-label="Retirer : Coussin et ciseau d&#x27;inauguration">−</button><output aria-live="polite">0</output><button type="button" data-d="1" aria-label="Ajouter : Coussin et ciseau d&#x27;inauguration">+</button></div></div></div><div class="mob" data-id="urne" data-cat="accessoires"><img src="img/m-urne.webp" alt="" loading="lazy" width="400" height="400"><b>Urne pour concours</b><small>Transparente, avec clé, 30 × 30 × 30 cm</small>
+<div class="bas"><span class="px">CHF 20.–</span><div class="qte"><button type="button" data-d="-1" aria-label="Retirer : Urne pour concours">−</button><output aria-live="polite">0</output><button type="button" data-d="1" aria-label="Ajouter : Urne pour concours">+</button></div></div></div><div class="mob" data-id="nappe-carreaux" data-cat="textiles"><img src="img/m-nappe-carreaux.webp" alt="" loading="lazy" width="400" height="400"><b>Nappe à carreaux</b><small>Rouge et blanche, carrée 160 cm</small>
+<div class="bas"><span class="px">CHF 10.–</span><div class="qte"><button type="button" data-d="-1" aria-label="Retirer : Nappe à carreaux">−</button><output aria-live="polite">0</output><button type="button" data-d="1" aria-label="Ajouter : Nappe à carreaux">+</button></div></div></div><div class="mob" data-id="vase-carre" data-cat="deco"><img src="img/m-vase-carre.webp" alt="" loading="lazy" width="400" height="400"><b>Vase carré</b><small>Transparent, 10 × 10 cm</small>
+<div class="bas"><span class="px">CHF 3.–</span><div class="qte"><button type="button" data-d="-1" aria-label="Retirer : Vase carré">−</button><output aria-live="polite">0</output><button type="button" data-d="1" aria-label="Ajouter : Vase carré">+</button></div></div></div><div class="mob" data-id="vase-bleu" data-cat="deco"><img src="img/m-vase-bleu.webp" alt="" loading="lazy" width="400" height="400"><b>Vase bleu / porte-bougie</b><small>En vase ou en bougeoir</small>
+<div class="bas"><span class="px">CHF 1.50</span><div class="qte"><button type="button" data-d="-1" aria-label="Retirer : Vase bleu / porte-bougie">−</button><output aria-live="polite">0</output><button type="button" data-d="1" aria-label="Ajouter : Vase bleu / porte-bougie">+</button></div></div></div><div class="mob" data-id="lampe-nomade" data-cat="luminaires"><img src="img/m-lampe-nomade.webp" alt="" loading="lazy" width="400" height="400"><b>Lampe nomade</b><small>3 niveaux d’intensité</small>
+<div class="bas"><span class="px">CHF 7.–</span><div class="qte"><button type="button" data-d="-1" aria-label="Retirer : Lampe nomade">−</button><output aria-live="polite">0</output><button type="button" data-d="1" aria-label="Ajouter : Lampe nomade">+</button></div></div></div><div class="mob" data-id="lampe-solaire" data-cat="luminaires"><img src="img/m-lampe-solaire.webp" alt="" loading="lazy" width="400" height="400"><b>Lampe solaire</b><small>LED décorative</small>
+<div class="bas"><span class="px">CHF 10.–</span><div class="qte"><button type="button" data-d="-1" aria-label="Retirer : Lampe solaire">−</button><output aria-live="polite">0</output><button type="button" data-d="1" aria-label="Ajouter : Lampe solaire">+</button></div></div></div><div class="mob" data-id="boule-disco" data-cat="luminaires"><img src="img/m-boule-disco.webp" alt="" loading="lazy" width="400" height="400"><b>Boule disco</b><small>Diamètre 20 cm</small>
+<div class="bas"><span class="px">CHF 10.–</span><div class="qte"><button type="button" data-d="-1" aria-label="Retirer : Boule disco">−</button><output aria-live="polite">0</output><button type="button" data-d="1" aria-label="Ajouter : Boule disco">+</button></div></div></div></div>
+    <p class="cat-note">Aussi au catalogue : nappe rayée, collier hawaïen, récipient à pop-corn, porte-numéro de table, ombrelle. Prix indicatifs par pièce, hors livraison. <a href="https://www.mandarineandco.ch/_files/ugd/15a357_202426bdd9a34f6b8a5a26f9c5d68b59.pdf" target="_blank" rel="noopener" style="color:var(--or);font-weight:700">Télécharger le catalogue (PDF)</a></p>
+    <div class="panier" id="panier" hidden><span id="panierTxt"></span><a class="btn btn-or" id="panierBtn" href="#">Demander un devis</a></div>
+  </div>
+</section>
+
+<section class="real" id="realisations">
+  <div class="wrap">
+    <span class="sur">Réalisations</span>
+    <h2>Ils nous ont fait confiance</h2>
+    <div class="reals">
+      <figure><img src="img/r-taycan.webp" alt="Soirée de lancement de la Porsche Taycan" loading="lazy"><figcaption><b>Soirée de lancement de la Porsche Taycan</b><span>Lancement de produit</span></figcaption></figure>
+      <figure><img src="img/r-patouch.webp" alt="Spectacle au souper de soutien Patouch" loading="lazy"><figcaption><b>Souper de soutien de l'association Patouch</b><span>Animations, communication, bénévoles</span></figcaption></figure>
+      <figure><img src="img/r-eau.webp" alt="Journée de l'eau 2019" loading="lazy"><figcaption><b>Journée de l'eau 2019</b><span>Manifestation grand public</span></figcaption></figure>
+      <figure><img src="img/r-privee.webp" alt="Chanteuse sur scène lors d'une soirée privée" loading="lazy"><figcaption><b>Soirée privée</b><span>Anniversaire</span></figcaption></figure>
+    </div>
+    <h3 style="margin-top:64px;font-size:1.7rem">Portfolio</h3>
+    <p style="color:var(--doux);margin:6px 0 0">Plongez dans l'univers de Mandarine &amp; Co et laissez-vous inspirer.</p>
+    <div class="galerie replie" id="galerie"><button type="button" aria-label="Agrandir : Spectacle aérien sous chapiteau"><img src="img/g01.webp" alt="Spectacle aérien sous chapiteau" loading="lazy"></button><button type="button" aria-label="Agrandir : Table de gala illuminée"><img src="img/g02.webp" alt="Table de gala illuminée" loading="lazy"></button><button type="button" aria-label="Agrandir : Concert dans une salle sombre"><img src="img/g03.webp" alt="Concert dans une salle sombre" loading="lazy"></button><button type="button" aria-label="Agrandir : Bâtiment éclairé en rose"><img src="img/g04.webp" alt="Bâtiment éclairé en rose" loading="lazy"></button><button type="button" aria-label="Agrandir : Grande salle dressée en rouge"><img src="img/g05.webp" alt="Grande salle dressée en rouge" loading="lazy"></button><button type="button" aria-label="Agrandir : Dégustation en plein air"><img src="img/g06.webp" alt="Dégustation en plein air" loading="lazy"></button><button type="button" aria-label="Agrandir : Halle industrielle aménagée"><img src="img/g07.webp" alt="Halle industrielle aménagée" loading="lazy"></button><button type="button" aria-label="Agrandir : Projection sur une façade"><img src="img/g08.webp" alt="Projection sur une façade" loading="lazy"></button><button type="button" aria-label="Agrandir : Banquet dans une halle"><img src="img/g09.webp" alt="Banquet dans une halle" loading="lazy"></button><button type="button" aria-label="Agrandir : Soirée de gala en lumière violette"><img src="img/g10.webp" alt="Soirée de gala en lumière violette" loading="lazy"></button><button type="button" aria-label="Agrandir : Démonstration de flyboard"><img src="img/g11.webp" alt="Démonstration de flyboard" loading="lazy"></button><button type="button" aria-label="Agrandir : Show de wakeboard sur un lac"><img src="img/g12.webp" alt="Show de wakeboard sur un lac" loading="lazy"></button><button type="button" aria-label="Agrandir : Spectacle sur scène"><img src="img/g13.webp" alt="Spectacle sur scène" loading="lazy"></button><button type="button" aria-label="Agrandir : Hall vitré éclairé en vert"><img src="img/g14.webp" alt="Hall vitré éclairé en vert" loading="lazy"></button><button type="button" aria-label="Agrandir : Décor sur le thème américain"><img src="img/g15.webp" alt="Décor sur le thème américain" loading="lazy"></button><button type="button" aria-label="Agrandir : Lounge lumineux"><img src="img/g16.webp" alt="Lounge lumineux" loading="lazy"></button><button type="button" aria-label="Agrandir : Jeux en plein air"><img src="img/g17.webp" alt="Jeux en plein air" loading="lazy"></button><button type="button" aria-label="Agrandir : Repas sous une halle en bois"><img src="img/g18.webp" alt="Repas sous une halle en bois" loading="lazy"></button></div>
+    <button class="btn btn-ligne" id="voirGalerie" type="button" style="color:var(--encre)">Voir toutes les photos</button>
+  </div>
+</section>
+<dialog id="visionneuse" aria-label="Photo agrandie"><button type="button" aria-label="Fermer">×</button><img alt=""></dialog>
+
+<section id="a-propos">
+  <div class="wrap apropos-grid">
+    <div class="portrait"><img src="img/florence.webp" alt="Florence Moix, fondatrice de Mandarine & Co" loading="lazy" width="900" height="1125"><div class="badge">Florence Moix<small>Fondatrice et directrice</small></div></div>
+    <div>
+      <span class="sur">À propos</span>
+      <h2>Créateurs de liens entre humains</h2>
+      <p>En 2018, Mandarine &amp; Co voit le jour sous la direction de <strong>Florence Moix</strong>, qui capitalise plus de 10 ans d'expérience dans l'événementiel. Économiste HEG/HES de formation, elle a travaillé dans le marketing et la vente, puis dirigé et cofondé Dialog-events pendant 5 ans, avant de voler de ses propres ailes.</p>
+      <p>Passionnée et curieuse, Florence va chercher l'innovation et les dernières tendances, qu'elle conjugue en mode local grâce à des partenariats avec des entreprises de la région.</p>
+      <div class="citation">« Par-dessus tout, nous aimons les gens : les gens heureux, qui se rencontrent, rient ensemble et partagent. »</div>
+      <div class="valeurs"><div><b>Innovation</b><span>Les dernières tendances pour des événements inoubliables.</span></div><div><b>Rigueur</b><span>Des événements « picco bello », réglés comme sur des roulettes.</span></div><div><b>Ancrage local</b><span>Des partenaires de la région, et le respect de nos paysages.</span></div></div>
+    </div>
+  </div>
+</section>
+
+<section class="faq" id="faq">
+  <div class="wrap faq-grid">
+    <div><span class="sur">FAQ</span><h2>Vos questions sur l'organisation d'un événement</h2><p class="lead">Une autre question ? <a href="#contact" style="color:var(--or);font-weight:700">Écrivez-nous</a>.</p></div>
+    <div>
+      <details><summary>Pourquoi faire appel à une agence événementielle ?</summary><p>Vous pouvez créer un événement par vous-même, comme vous savez cuisiner. Mais une agence vous conseille, propose des idées novatrices, maîtrise le budget et apporte une plus-value. Le jour J, la logistique est entièrement prise en charge : vous vous consacrez à vos invités.</p></details>
+      <details><summary>En quoi l'agence peut-elle m'aider ?</summary><p>Conseil sur le lieu, l'animation, la restauration et le budget, coordination de l'ensemble et recherche des meilleurs partenaires. Nous pouvons tout créer de A à Z ou ne nous occuper que d'une partie de l'événement.</p></details>
+      <details><summary>Quelles sont les différentes prestations ?</summary><p>De l'animation simple à la soirée complète (repas, communication et animations comprises) : gestion d'événement, coordination, brief d'agence… Nous louons aussi du mobilier et la Selfie Box.</p></details>
+      <details><summary>Combien de temps à l'avance dois-je vous contacter ?</summary><p>Cela dépend du type d'événement, du nombre d'invités et des animations. L'idéal reste le plus tôt possible, dès que vous avez une première idée : cela laisse le temps d'imaginer, d'ajuster et de prévoir les imprévus.</p></details>
+      <details><summary>Allez-vous écouter ce que je veux ?</summary><p>Vous êtes le client : tout ce qui est possible et réalisable, nous vous aidons à le concrétiser. Nous vous dirons aussi honnêtement quand une demande se heurte au budget, au lieu ou à la météo. Personne ne vous promettra un événement en plein air sans neige au mois de janvier !</p></details>
+      <details><summary>Quels sont vos tarifs ?</summary><p>Ils varient selon le périmètre et la nature du mandat : organiser tout votre événement ne coûte pas la même chose que s'occuper seulement de l'animation.</p></details>
+      <details><summary>Je ne connais pas encore mon budget. Puis-je déjà vous contacter ?</summary><p>Oui, nous vous aidons à établir un budget en accord avec vos moyens.</p></details>
+      <details><summary>Pourquoi choisir Mandarine &amp; Co ?</summary><p>Une grande aisance dans la gestion de projets d'envergure, des plannings et des offres claires, la recherche constante de l'innovation, et des partenariats avec des entreprises de la région.</p></details>
+    </div>
+  </div>
+</section>
+
+<section class="contact" id="contact">
+  <div class="wrap contact-grid">
+    <div>
+      <span class="sur" style="color:var(--or-c)">Contact</span>
+      <h2>Une idée, un projet, un événement à célébrer ?</h2>
+      <p class="lead">Nous nous réjouissons d'en parler avec vous.</p>
+      <div class="infos">
+        <a class="info" href="tel:+41796685625"><span class="pi"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg></span><span><small>Téléphone</small>+41 79 668 56 25</span></a>
+        <a class="info" href="mailto:info@mandarineandco.ch"><span class="pi"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 6L2 7"/></svg></span><span><small>E-mail</small>info@mandarineandco.ch</span></a>
+        <a class="info" href="https://www.google.com/maps/search/?api=1&query=Rue+Ambuel+7,+1950+Sion" target="_blank" rel="noopener"><span class="pi"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2"><path d="M20 10c0 6-8 12-8 12S4 16 4 10a8 8 0 0 1 16 0z"/><circle cx="12" cy="10" r="3"/></svg></span><span><small>Adresse</small>Rue Ambuel 7, 1950 Sion</span></a>
+      </div>
+      <div class="reseaux">
+        <a href="https://www.instagram.com/mandarineandco.ch/" aria-label="Instagram" target="_blank" rel="noopener"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></svg></a>
+        <a href="https://www.facebook.com/mandarineandco.ch/" aria-label="Facebook" target="_blank" rel="noopener"><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M14 8h3V4h-3a4 4 0 0 0-4 4v2H8v4h2v8h4v-8h3l1-4h-4V8z"/></svg></a>
+        <a href="https://www.linkedin.com/company/mandarine-c%C5%8D/" aria-label="LinkedIn" target="_blank" rel="noopener"><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zM3 9h4v12H3zM9 9h3.8v1.7h.1c.5-1 1.8-2 3.8-2 4 0 4.8 2.6 4.8 6V21h-4v-5.6c0-1.3 0-3-1.9-3s-2.2 1.5-2.2 2.9V21H9z"/></svg></a>
+      </div>
+      <iframe class="plan" title="Plan d'accès à Mandarine & Co, Sion" loading="lazy" src="https://www.openstreetmap.org/export/embed.html?bbox=7.35161,46.23117,7.36761,46.23917&layer=mapnik&marker=46.2351726,7.3596124"></iframe>
+    </div>
+    <form id="formContact" novalidate>
+      <h3>Parlez-nous de votre projet</h3>
+      <div class="champs">
+        <fieldset class="plein"><legend>Type d'événement</legend><div class="choix">
+          <label><input type="radio" name="type" value="Événement d'entreprise" checked><span>Entreprise</span></label>
+          <label><input type="radio" name="type" value="Séminaire / conférence"><span>Séminaire / conférence</span></label>
+          <label><input type="radio" name="type" value="Manifestation grand public"><span>Grand public</span></label>
+          <label><input type="radio" name="type" value="Stand / expo"><span>Stand / expo</span></label>
+          <label><input type="radio" name="type" value="Événement privé"><span>Privé</span></label>
+          <label><input type="radio" name="type" value="Selfie Box / mobilier"><span>Selfie Box / mobilier</span></label></div></fieldset>
+        <label>Nom, prénom<input name="nom" required autocomplete="name"></label>
+        <label>Entreprise (facultatif)<input name="entreprise" autocomplete="organization"></label>
+        <label>E-mail<input name="email" type="email" required autocomplete="email"></label>
+        <label>Téléphone<input name="tel" type="tel" autocomplete="tel"></label>
+        <label>Date envisagée<input name="date" type="date"></label>
+        <label>Nombre d'invités<input name="invites" type="number" min="1" inputmode="numeric"></label>
+        <label class="plein">Votre projet<textarea name="message" rows="4" placeholder="Votre idée, même en vrac : nous referons le puzzle avec vous."></textarea></label>
+      </div>
+      <button class="btn btn-or" type="submit">Envoyer ma demande</button>
+      <p class="ok" id="formOk" role="status"></p>
+    </form>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <img src="img/logo-clair.webp" alt="Mandarine & Co" loading="lazy">
+    <nav aria-label="Pied de page"><a href="#evenements">Événements</a><a href="#selfie-box">Selfie Box</a><a href="#mobilier">Mobilier</a><a href="#realisations">Réalisations</a><a href="#faq">FAQ</a><a href="#contact">Contact</a></nav>
+    <span>© 2026 Mandarine &amp; Co · Créateur d'événements · Sion</span>
+  </div>
+</footer>
+
+<script>
+const MOB = [{"id": "table-haute", "nom": "Table haute", "prix": 20, "unite": ""}, {"id": "housse", "nom": "Housse de table haute", "prix": 10, "unite": ""}, {"id": "table-basse", "nom": "Table basse", "prix": 15, "unite": ""}, {"id": "fauteuil-blanc", "nom": "Fauteuil blanc", "prix": 25, "unite": ""}, {"id": "chaise-longue", "nom": "Chaise longue", "prix": 10, "unite": ""}, {"id": "tapis-rouge", "nom": "Tapis rouge", "prix": 20, "unite": "mètres"}, {"id": "potelet", "nom": "Potelet", "prix": 20, "unite": ""}, {"id": "cordons", "nom": "Cordon", "prix": 10, "unite": ""}, {"id": "porte-cintres", "nom": "Porte-cintres", "prix": 25, "unite": ""}, {"id": "cintre", "nom": "Cintre en bois", "prix": 0.4, "unite": ""}, {"id": "coussin", "nom": "Coussin et ciseau d'inauguration", "prix": 25, "unite": ""}, {"id": "urne", "nom": "Urne pour concours", "prix": 20, "unite": ""}, {"id": "nappe-carreaux", "nom": "Nappe à carreaux", "prix": 10, "unite": ""}, {"id": "vase-carre", "nom": "Vase carré", "prix": 3, "unite": ""}, {"id": "vase-bleu", "nom": "Vase bleu / porte-bougie", "prix": 1.5, "unite": ""}, {"id": "lampe-nomade", "nom": "Lampe nomade", "prix": 7, "unite": ""}, {"id": "lampe-solaire", "nom": "Lampe solaire", "prix": 10, "unite": ""}, {"id": "boule-disco", "nom": "Boule disco", "prix": 10, "unite": ""}];
+const burger = document.querySelector('.burger'), menu = document.getElementById('menu');
+burger.addEventListener('click', () => { const o = menu.classList.toggle('ouvert'); burger.setAttribute('aria-expanded', o); });
+menu.querySelectorAll('a').forEach(a => a.addEventListener('click', () => { menu.classList.remove('ouvert'); burger.setAttribute('aria-expanded', false); }));
+// onglets
+const tabs = [...document.querySelectorAll('[role=tab]')];
+tabs.forEach((t, i) => {
+  t.addEventListener('click', () => choisir(t));
+  t.addEventListener('keydown', e => { const d = e.key === 'ArrowRight' ? 1 : e.key === 'ArrowLeft' ? -1 : 0; if (d) { const n = tabs[(i + d + tabs.length) % tabs.length]; choisir(n); n.focus(); } });
+});
+function choisir(t) { tabs.forEach(x => { const on = x === t; x.setAttribute('aria-selected', on); x.tabIndex = on ? 0 : -1; document.getElementById(x.getAttribute('aria-controls')).hidden = !on; }); }
+// mobilier : filtres + quantités + devis
+const qtes = {}, panier = document.getElementById('panier'), ptxt = document.getElementById('panierTxt'), pbtn = document.getElementById('panierBtn');
+const chf = n => n.toFixed(2).replace(/\.00$/, '.–');
+document.querySelectorAll('.mob').forEach(el => {
+  const id = el.dataset.id, out = el.querySelector('output');
+  el.querySelectorAll('.qte button').forEach(b => b.addEventListener('click', () => {
+    qtes[id] = Math.max(0, (qtes[id] || 0) + (+b.dataset.d)); out.value = qtes[id]; el.classList.toggle('choisi', qtes[id] > 0); maj();
+  }));
+});
+function maj() {
+  const lignes = MOB.filter(m => qtes[m.id] > 0);
+  panier.hidden = !lignes.length; if (!lignes.length) return;
+  const nb = lignes.reduce((s, m) => s + qtes[m.id], 0), tot = lignes.reduce((s, m) => s + qtes[m.id] * m.prix, 0);
+  ptxt.innerHTML = `${nb} article${nb > 1 ? 's' : ''} · estimation <b>CHF ${chf(tot)}</b>`;
+  const corps = ['Bonjour,', '', 'Je souhaite recevoir un devis pour la location suivante :', '', ...lignes.map(m => `- ${qtes[m.id]} × ${m.nom}${m.unite ? ' (' + m.unite + ')' : ''}`), '', `Estimation indicative : CHF ${chf(tot)}`, '', 'Date et lieu de l\'événement : ', 'Livraison souhaitée : oui / non', '', 'Merci !'];
+  pbtn.href = 'mailto:info@mandarineandco.ch?subject=' + encodeURIComponent('Demande de devis location de mobilier') + '&body=' + encodeURIComponent(corps.join('\n'));
+}
+document.querySelectorAll('.filtre').forEach(b => b.addEventListener('click', () => {
+  document.querySelectorAll('.filtre').forEach(x => x.setAttribute('aria-pressed', x === b));
+  document.querySelectorAll('.mob').forEach(m => m.hidden = b.dataset.cat !== 'tout' && m.dataset.cat !== b.dataset.cat);
+}));
+// galerie
+const gal = document.getElementById('galerie'), vg = document.getElementById('voirGalerie'), dlg = document.getElementById('visionneuse');
+vg.addEventListener('click', () => { gal.classList.remove('replie'); vg.hidden = true; });
+gal.querySelectorAll('button').forEach(b => b.addEventListener('click', () => { dlg.querySelector('img').src = b.querySelector('img').src; dlg.querySelector('img').alt = b.querySelector('img').alt; dlg.showModal(); }));
+dlg.addEventListener('click', () => dlg.close());
+// formulaire -> e-mail pré-rempli
+document.getElementById('formContact').addEventListener('submit', e => {
+  e.preventDefault();
+  const f = new FormData(e.target), ok = document.getElementById('formOk');
+  if (!f.get('nom') || !f.get('email')) { ok.style.display = 'block'; ok.style.color = '#b3261e'; ok.textContent = 'Merci d’indiquer au moins votre nom et votre e-mail.'; return; }
+  const l = [`Type : ${f.get('type')}`, `Nom : ${f.get('nom')}`, `Entreprise : ${f.get('entreprise') || '-'}`, `E-mail : ${f.get('email')}`, `Téléphone : ${f.get('tel') || '-'}`,
+    `Date envisagée : ${f.get('date') || '-'}`, `Nombre d'invités : ${f.get('invites') || '-'}`, '', f.get('message') || ''];
+  location.href = 'mailto:info@mandarineandco.ch?subject=' + encodeURIComponent('Projet : ' + f.get('type')) + '&body=' + encodeURIComponent(l.join('\n'));
+  ok.style.display = 'block'; ok.style.color = ''; ok.textContent = 'Votre messagerie s’ouvre avec la demande pré-remplie : il ne reste qu’à l’envoyer.';
+});
+</script>
+</body>
+</html>
